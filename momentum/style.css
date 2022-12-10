@@ -1,12 +1,3 @@
-body {
-  background-color: brown;
-}
-
-.clicked {
-  color: cornflowerblue;
-  transition: all ease 0.2s;
-}
-
-.sexy-font {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+.hidden {
+  display: none;
 }

@@ -1,17 +1,17 @@
-const header = document.querySelector(".header");
-const title = document.querySelector(".header:first-child h1");
+const loginForm = document.querySelector("#login-form");
+const loginInput = loginForm.querySelector("#login-form input");
+const greeting = document.querySelector("#greeting");
 
-function handleTitleClick() {
-  title.classList.toggle("clicked");
+const HIDDEN_CLASSNAME = "hidden";
+// Uppercase variables are variables that only contains strings
+// and these are variables that we just save as strings
+
+function onLoginSubmit(event) {
+  event.preventDefault();
+  loginForm.classList.add(HIDDEN_CLASSNAME);
+  const username = loginInput.value;
+  greeting.innerText = `Hello ${username}`;
+  greeting.classList.remove(HIDDEN_CLASSNAME);
 }
 
-// function handleTitleClick() {
-//   const clickedClass = "clicked";
-//   if (title.classList.contains(clickedClass)) {
-//     title.classList.remove(clickedClass);
-//   } else {
-//     title.classList.add(clickedClass);
-//   }
-// }
-
-title.addEventListener("click", handleTitleClick);
+loginForm.addEventListener("submit", onLoginSubmit);
