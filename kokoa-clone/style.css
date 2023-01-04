@@ -1,0 +1,15 @@
+.sub-tit {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.btn {
+  padding: 5px;
+  box-sizing: border-box;
+}

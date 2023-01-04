@@ -4,9 +4,51 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Our First Tag</title>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Assignments-Day03</title>
   </head>
   <body>
-    <h1>Hello World</h1>
+    <h1 class="title">Create An Account</h1>
+    <form id="form" action="#">
+      <label for="firName">
+        <span class="sub-tit">First Name</span>
+        <input type="text" id="firName" placeholder="First Name" required />
+      </label>
+      <label for="lasName">
+        <span class="sub-tit">Last Name</span>
+        <input type="text" id="lasName" placeholder="Last Name" required />
+      </label>
+      <label for="email">
+        <span class="sub-tit">Email</span>
+        <input type="email" id="email" placeholder="E-mail" required />
+      </label>
+      <label for="userName">
+        <span class="sub-tit">Username</span>
+        <input type="text" id="userName" placeholder="User Name" required />
+      </label>
+      <label for="password">
+        <span class="sub-tit">Password</span>
+        <input
+          type="password"
+          id="password"
+          placeholder="Password"
+          required
+          minlength="10"
+        />
+      </label>
+      <label for="birth">
+        <span class="sub-tit">Birth Date</span>
+        <input type="date" id="birth" required />
+      </label>
+      <label for="happiness">
+        <span class="sub-tit">How happy are you?</span>
+        <input type="range" id="happiness" required />
+      </label>
+      <label for="favColor">
+        <span class="sub-tit">What is your favorite color?</span>
+        <input type="color" id="favColor" required />
+      </label>
+      <input class="btn" type="submit" value="Creare Account" />
+    </form>
   </body>
 </html>
