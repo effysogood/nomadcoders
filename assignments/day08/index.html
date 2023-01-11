@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>Assignment - Day08</title>
-    <link href="./css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
   </head>
 
   <body>
@@ -18,7 +18,7 @@
 
       <div class="player-bar">
         <div class="player-bar__cover">
-          <img src="" alt="" />
+          <ion-icon name="musical-notes"></ion-icon>
         </div>
         <div class="player-bar__info">
           <div class="player-bar__info-tit">Random<br />Love</div>
@@ -27,23 +27,23 @@
       </div>
 
       <div class="control-bar">
-        <button class="control-bar__btn play">
+        <button class="control-bar__btn">
           <ion-icon name="play"></ion-icon>
-          <span>play</span>
+          <span>&ensp;play</span>
         </button>
-        <button class="control-bar__btn like">
+        <button class="control-bar__btn">
           <ion-icon name="heart"></ion-icon>
         </button>
-        <button class="control-bar__btn add">
+        <button class="control-bar__btn">
           <ion-icon name="add"></ion-icon>
         </button>
       </div>
 
-      <div class="contents">
-        <ul class="player-list">
-          <li class="player-list__item">
+      <ul class="player-list">
+        <li class="player-list__item">
+          <a class="player-list__item--link" href="#">
             <div class="player-list__item--cover">
-              <img src="" alt="" />
+              <ion-icon name="flower"></ion-icon>
             </div>
             <div class="player-list__item--info">
               <p class="title">Matargasti</p>
@@ -51,9 +51,13 @@
                 <span class="description--artist">Mohit Chauhan</span>
               </p>
             </div>
-          </li>
-          <li class="player-list__item">
-            <div class="player-list__item--cover"></div>
+          </a>
+        </li>
+        <li class="player-list__item">
+          <a class="player-list__item--link" href="#">
+            <div class="player-list__item--cover">
+              <ion-icon name="sunny"></ion-icon>
+            </div>
             <div class="player-list__item--info">
               <p class="title">Attitude</p>
               <p class="description">
@@ -61,9 +65,13 @@
                 <span class="description--album">Attitude</span>
               </p>
             </div>
-          </li>
-          <li class="player-list__item">
-            <div class="player-list__item--cover"></div>
+          </a>
+        </li>
+        <li class="player-list__item">
+          <a class="player-list__item--link" href="#">
+            <div class="player-list__item--cover">
+              <ion-icon name="rose"></ion-icon>
+            </div>
             <div class="player-list__item--info">
               <p class="title">Try Everything</p>
               <p class="description">
@@ -71,9 +79,13 @@
                 <span class="description--album">Zootopia</span>
               </p>
             </div>
-          </li>
-          <li class="player-list__item">
-            <div class="player-list__item--cover"></div>
+          </a>
+        </li>
+        <li class="player-list__item">
+          <a class="player-list__item--link" href="#">
+            <div class="player-list__item--cover">
+              <ion-icon name="planet"></ion-icon>
+            </div>
             <div class="player-list__item--info">
               <p class="title">Sunflower</p>
               <p class="description">
@@ -81,9 +93,9 @@
                 <span class="description--album">Sunflower</span>
               </p>
             </div>
-          </li>
-        </ul>
-      </div>
+          </a>
+        </li>
+      </ul>
     </div>
 
     <script

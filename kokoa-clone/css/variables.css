@@ -1,3 +1,9 @@
 :root {
-  --yellow: #fae100;
+  --c-yellow: #fae100;
+  --c-gray-blue:#23363e;
+  --c-gray-800:#333333;
+  --c-gray-600:#666666;
+  --c-gray-400:#999999;
+  --c-gray-200:#dedede;
+  --c-gray-100:#fafafa;
 }

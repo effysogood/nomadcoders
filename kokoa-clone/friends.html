@@ -4,7 +4,71 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Friends List</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Friends - Kokoa Clone</title>
   </head>
-  <body></body>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <ion-icon name="wifi-outline"></ion-icon>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>100%</span>
+        <ion-icon name="battery-full-outline"></ion-icon>
+        <ion-icon name="flash"></ion-icon>
+      </div>
+    </div>
+    <!-- // Status Bar -->
+    
+    <header class="screen-header">
+      <h1 class="screen-header__title">Friends</h1>
+      <div class="screen-header__icons">
+        <span><ion-icon name="search-outline"></ion-icon></span>
+        <span><ion-icon name="musical-notes-outline"></ion-icon></span>
+        <span><ion-icon name="settings-outline"></ion-icon></span>  
+      </div>
+    </header>
+    <!-- // Header-->
+
+    <div id="friends-display-link">
+      <ion-icon name="help-circle-outline"></ion-icon>
+      <span>Friend's Names Display</span>
+      <ion-icon name="chevron-forward-outline"></ion-icon>
+    </div>
+
+    
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__btn">
+          <a class="nav__link" href="friends.html">
+            <ion-icon name="person"></ion-icon>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="#">
+            <span class="nav__notification">1</span>
+            <ion-icon name="chatbubble-outline"></ion-icon>
+        </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="#">
+            <ion-icon name="search-outline"></ion-icon>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="#">
+            <span class="nav__notification--dot"></span>
+            <ion-icon name="ellipsis-horizontal"></ion-icon>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
 </html>

@@ -37,13 +37,13 @@
   color: rgba(0, 0, 0, 0.4);
 }
 .login-form__input:focus {
-  border-color: var(--yellow);
+  border-color: var(--c-yellow);
 }
 
 .login-form__input[type="submit"] {
   margin: 1rem 0 0.6rem 0;
   padding: 1.6rem 0;
-  background-color: var(--yellow);
+  background-color: var(--c-yellow);
   cursor: pointer;
   border-radius: 3px;
 }
