@@ -1,85 +1,106 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Assignment - Day08</title>
-    <link href="./css/style.css" rel="stylesheet" type="text/css" />
-  </head>
 
-  <body>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Assignment - Day08</title>
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="player-wrapper">
     <header class="header">
-      <button class="header__btn--close"></button>
+      <button class="header__btn--close">
+        <ion-icon name="close-circle-outline"></ion-icon>
+      </button>
       <h1 class="header__title">Playlist</h1>
     </header>
 
     <div class="player-bar">
       <div class="player-bar__cover">
-        <img src="" alt="" />
+        <ion-icon name="musical-notes"></ion-icon>
       </div>
       <div class="player-bar__info">
-        <div class="player-bar__info-tit"></div>
-        <div class="player-bar__info-desc"></div>
+        <div class="player-bar__info-tit">Random<br />Love</div>
+        <div class="player-bar__info-desc">by Divay Kapoor</div>
       </div>
     </div>
 
     <div class="control-bar">
-      <button class="control-bar__btn--play">
+      <button class="control-bar__btn">
         <ion-icon name="play"></ion-icon>
+        <span>&ensp;play</span>
       </button>
-      <button class="control-bar__btn--like">
+      <button class="control-bar__btn">
         <ion-icon name="heart"></ion-icon>
       </button>
-      <button class="control-bar__btn--add">
+      <button class="control-bar__btn">
         <ion-icon name="add"></ion-icon>
       </button>
     </div>
 
-    <div class="contents">
-      <ul class="player-list">
-        <li class="player-list__item">
+    <ul class="player-list">
+      <li class="player-list__item">
+        <a class="player-list__item--link" href="#">
           <div class="player-list__item--cover">
-            <img src="" alt="" />
+            <ion-icon name="flower"></ion-icon>
           </div>
-          <p class="player-list__item--tit">Matargasti</p>
-          <p class="player-list__item--desc">
-            <span class="artist">Mohit Chauhan</span>
-          </p>
-        </li>
-        <li class="player-list__item">
-          <div class="player-list__item--cover"></div>
-          <p class="player-list__item--tit">Attitude</p>
-          <p class="player-list__item--desc">
-            <span class="artist">Mohit Chauhan</span>
-            <span class="album">Attitude</span>
-          </p>
-        </li>
-        <li class="player-list__item">
-          <div class="player-list__item--cover"></div>
-          <p class="player-list__item--tit">Try Everything</p>
-          <p class="player-list__item--desc">
-            <span class="artist">Shakira</span>
-            <span class="album">Zootopia</span>
-          </p>
-        </li>
-        <li class="player-list__item">
-          <div class="player-list__item--img"></div>
-          <p class="player-list__item--tit">Sunflower</p>
-          <p class="player-list__item--desc">
-            <span class="artist">Joseph Vincent</span>
-            <span class="album">Sunflower</span>
-          </p>
-        </li>
-      </ul>
-    </div>
+          <div class="player-list__item--info">
+            <p class="title">Matargasti</p>
+            <p class="description">
+              <span class="description--artist">Mohit Chauhan</span>
+            </p>
+          </div>
+        </a>
+      </li>
+      <li class="player-list__item">
+        <a class="player-list__item--link" href="#">
+          <div class="player-list__item--cover">
+            <ion-icon name="sunny"></ion-icon>
+          </div>
+          <div class="player-list__item--info">
+            <p class="title">Attitude</p>
+            <p class="description">
+              <span class="description--artist">Mohit Chauhan</span>
+              <span class="description--album">Attitude</span>
+            </p>
+          </div>
+        </a>
+      </li>
+      <li class="player-list__item">
+        <a class="player-list__item--link" href="#">
+          <div class="player-list__item--cover">
+            <ion-icon name="rose"></ion-icon>
+          </div>
+          <div class="player-list__item--info">
+            <p class="title">Try Everything</p>
+            <p class="description">
+              <span class="description--artist">Shakira</span>
+              <span class="description--album">Zootopia</span>
+            </p>
+          </div>
+        </a>
+      </li>
+      <li class="player-list__item">
+        <a class="player-list__item--link" href="#">
+          <div class="player-list__item--cover">
+            <ion-icon name="planet"></ion-icon>
+          </div>
+          <div class="player-list__item--info">
+            <p class="title">Sunflower</p>
+            <p class="description">
+              <span class="description--artist">Joseph Vincent</span>
+              <span class="description--album">Sunflower</span>
+            </p>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </div>
 
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-  </body>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
 </html>
