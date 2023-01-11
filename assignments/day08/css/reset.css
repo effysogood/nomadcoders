@@ -130,6 +130,9 @@ table {
 input:focus {
   outline: none;
 }
-a {
+a,
+button {
+  all: unset;
   text-decoration: none;
+  cursor: pointer;
 }

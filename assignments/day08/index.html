@@ -8,69 +8,82 @@
   </head>
 
   <body>
-    <header class="header">
-      <button class="header__btn--close"></button>
-      <h1 class="header__title">Playlist</h1>
-    </header>
+    <div class="player-wrapper">
+      <header class="header">
+        <button class="header__btn--close">
+          <ion-icon name="close-circle-outline"></ion-icon>
+        </button>
+        <h1 class="header__title">Playlist</h1>
+      </header>
 
-    <div class="player-bar">
-      <div class="player-bar__cover">
-        <img src="" alt="" />
+      <div class="player-bar">
+        <div class="player-bar__cover">
+          <img src="" alt="" />
+        </div>
+        <div class="player-bar__info">
+          <div class="player-bar__info-tit">Random<br />Love</div>
+          <div class="player-bar__info-desc">by Divay Kapoor</div>
+        </div>
       </div>
-      <div class="player-bar__info">
-        <div class="player-bar__info-tit"></div>
-        <div class="player-bar__info-desc"></div>
+
+      <div class="control-bar">
+        <button class="control-bar__btn play">
+          <ion-icon name="play"></ion-icon>
+          <span>play</span>
+        </button>
+        <button class="control-bar__btn like">
+          <ion-icon name="heart"></ion-icon>
+        </button>
+        <button class="control-bar__btn add">
+          <ion-icon name="add"></ion-icon>
+        </button>
       </div>
-    </div>
 
-    <div class="control-bar">
-      <button class="control-bar__btn--play">
-        <ion-icon name="play"></ion-icon>
-      </button>
-      <button class="control-bar__btn--like">
-        <ion-icon name="heart"></ion-icon>
-      </button>
-      <button class="control-bar__btn--add">
-        <ion-icon name="add"></ion-icon>
-      </button>
-    </div>
-
-    <div class="contents">
-      <ul class="player-list">
-        <li class="player-list__item">
-          <div class="player-list__item--cover">
-            <img src="" alt="" />
-          </div>
-          <p class="player-list__item--tit">Matargasti</p>
-          <p class="player-list__item--desc">
-            <span class="artist">Mohit Chauhan</span>
-          </p>
-        </li>
-        <li class="player-list__item">
-          <div class="player-list__item--cover"></div>
-          <p class="player-list__item--tit">Attitude</p>
-          <p class="player-list__item--desc">
-            <span class="artist">Mohit Chauhan</span>
-            <span class="album">Attitude</span>
-          </p>
-        </li>
-        <li class="player-list__item">
-          <div class="player-list__item--cover"></div>
-          <p class="player-list__item--tit">Try Everything</p>
-          <p class="player-list__item--desc">
-            <span class="artist">Shakira</span>
-            <span class="album">Zootopia</span>
-          </p>
-        </li>
-        <li class="player-list__item">
-          <div class="player-list__item--img"></div>
-          <p class="player-list__item--tit">Sunflower</p>
-          <p class="player-list__item--desc">
-            <span class="artist">Joseph Vincent</span>
-            <span class="album">Sunflower</span>
-          </p>
-        </li>
-      </ul>
+      <div class="contents">
+        <ul class="player-list">
+          <li class="player-list__item">
+            <div class="player-list__item--cover">
+              <img src="" alt="" />
+            </div>
+            <div class="player-list__item--info">
+              <p class="title">Matargasti</p>
+              <p class="description">
+                <span class="description--artist">Mohit Chauhan</span>
+              </p>
+            </div>
+          </li>
+          <li class="player-list__item">
+            <div class="player-list__item--cover"></div>
+            <div class="player-list__item--info">
+              <p class="title">Attitude</p>
+              <p class="description">
+                <span class="description--artist">Mohit Chauhan</span>
+                <span class="description--album">Attitude</span>
+              </p>
+            </div>
+          </li>
+          <li class="player-list__item">
+            <div class="player-list__item--cover"></div>
+            <div class="player-list__item--info">
+              <p class="title">Try Everything</p>
+              <p class="description">
+                <span class="description--artist">Shakira</span>
+                <span class="description--album">Zootopia</span>
+              </p>
+            </div>
+          </li>
+          <li class="player-list__item">
+            <div class="player-list__item--cover"></div>
+            <div class="player-list__item--info">
+              <p class="title">Sunflower</p>
+              <p class="description">
+                <span class="description--artist">Joseph Vincent</span>
+                <span class="description--album">Sunflower</span>
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
 
     <script
