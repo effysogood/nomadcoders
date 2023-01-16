@@ -1,0 +1,17 @@
+.status-bar {
+  width: 100%;
+  padding: 3rem 0;
+  font-size: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.status-bar__btn {
+  transition: opacity 0.2s ease-in-out;
+}
+.status-bar__btn:hover {
+  opacity: 0.4;
+}
+
+ion-icon[name="search-outline"] {
+  --ionicon-stroke-width: 44px;
+}
