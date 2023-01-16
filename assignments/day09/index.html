@@ -1,53 +1,114 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>Assignment - Day09</title>
     <link href="css/style.css" rel="stylesheet" type="text/css" />
-</head>
+  </head>
 
-<body>
-    <header class="header">
+  <body>
+    <div class="screen">
+      <header class="header">
         <nav class="header-nav">
-            <a class="header-menu" href="#">
-                <ion-icon name="menu"></ion-icon>
-            </a>
-            <h1 class="header-title">library</h1>
-            <a class="header-cart" href="#">
-                <ion-icon name="basket"></ion-icon>
-            </a>
+          <a class="header-menu" href="#">
+            <ion-icon name="menu"></ion-icon>
+          </a>
+          <h1 class="header-title">library</h1>
+          <a class="header-cart" href="#">
+            <ion-icon name="basket"></ion-icon>
+          </a>
         </nav>
-        <div class="header-search">
-            <input class="header-search__input" type="text">
-            <button class="header-search__input">
-                <ion-icon name="search"></ion-icon>
-            </button>
+        <div class="search-bar">
+          <input type="text" placeholder="Search Books" />
+          <button class="header-search__input">
+            <ion-icon name="search"></ion-icon>
+          </button>
         </div>
-    </header>
+      </header>
 
-    <main class="contents">
-        <section class="box">
-            <h2 class="content-title">Book Of The Day</h2>
-
+      <main class="main">
+        <section class="main-daybook">
+          <h2 class="main-title">Book Of The Day</h2>
+          <div class="daybook__column">
+            <div class="daybook-cover">
+              <img src="" alt="" />
+            </div>
+          </div>
+          <div class="daybook__column">
+            <h3 class="daybook-title">No Fixed abode</h3>
+            <p class="daybook-author">Journey Through</p>
+            <div class="daybook-stars">
+              <span
+                ><a href="#"><ion-icon name="star"></ion-icon></a
+              ></span>
+              <span
+                ><a href="#"><ion-icon name="star"></ion-icon></a
+              ></span>
+              <span
+                ><a href="#"><ion-icon name="star"></ion-icon></a
+              ></span>
+              <span
+                ><a href="#"><ion-icon name="star"></ion-icon></a
+              ></span>
+              <span
+                ><a href="#"><ion-icon name="star"></ion-icon></a
+              ></span>
+            </div>
+            <div class="daybook-info">
+              <button class="daybook-info__btn">Journey</button>
+              <button class="daybook-info__btn">Biography</button>
+            </div>
+            <div class="daybook-link">
+              <button class="daybook-link__bookmark">
+                <ion-icon name="bookmark-outline"></ion-icon>
+              </button>
+              <button class="daybook-link__booking">Book Now</button>
+            </div>
+          </div>
         </section>
-        <section class="box">
-            <h2 class="content-title">Top Adventures</h2>
-            <ul class="list">
-                <li class="adventures-item"></li>
-                <li class="adventures-item"></li>
-                <li class="adventures-item"></li>
-            </ul>
+        <section class="main-adventures">
+          <h2 class="main-title">Top Adventures</h2>
+          <ul class="adventures-list">
+            <li class="adventures-item">
+              <a href="#" class="adventures-item__link">
+                <div class="adventures-item__cover"></div>
+                <div class="adventures-item__stars">
+                  <span
+                    ><a href="#"><ion-icon name="star"></ion-icon></a
+                  ></span>
+                  <span
+                    ><a href="#"><ion-icon name="star"></ion-icon></a
+                  ></span>
+                  <span
+                    ><a href="#"><ion-icon name="star"></ion-icon></a
+                  ></span>
+                  <span
+                    ><a href="#"><ion-icon name="star"></ion-icon></a
+                  ></span>
+                  <span
+                    ><a href="#"><ion-icon name="star"></ion-icon></a
+                  ></span>
+                </div>
+              </a>
+            </li>
+            <li class="adventures-item"></li>
+            <li class="adventures-item"></li>
+          </ul>
         </section>
-        <section class="content-03">
-            <h2 class="content-title">Popular Authors</h2>
-            <div class="authors"></div>
+        <section class="main-authors">
+          <h2 class="main-title">Popular Authors</h2>
+          <div class="authors"></div>
         </section>
-    </main>
-
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-</body>
-
+      </main>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
