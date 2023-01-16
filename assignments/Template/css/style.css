@@ -1,12 +1,15 @@
 /* Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap");
 
-/* Components */
+/* Reset */
 @import "./reset.css";
 
+/* Components */
+
+/* Screens */
+
 html,
-body{
+body {
   font-size: 62.5%;
-  background-color: black;
   font-family: "Poppins", sans-serif;
 }
