@@ -1,25 +1,27 @@
-const loginForm = document.querySelector("#login-form");
-const loginInput = loginForm.querySelector("#login-form input");
-const greeting = document.querySelector("#greeting");
+// ---- Array
+const daysOfWeek = ["mon", "tue", "wed", "thu", "fri", "sat"];
 
-const HIDDEN_CLASSNAME = "hidden";
-const USERNAME_KEY = "username";
-// Uppercase variables are variables that only contains strings
-// and these are variables that we just save as strings
+// Get Item from Array
+console.log(daysOfWeek);
 
-function onLoginSubmit(event) {
-  event.preventDefault();
-  loginForm.classList.add(HIDDEN_CLASSNAME);
-  const username = loginInput.value;
-  localStorage.setItem(USERNAME_KEY, username);
-}
+// Get Third Item from Array
+console.log(daysOfWeek[3]);
 
-const savedUsername = localStorage.getItem(USERNAME_KEY);
+// Add one more day to the array
+daysOfWeek.push("sun");
 
-if (savedUsername === null) {
-  loginForm.classList.remove(HIDDEN_CLASSNAME);
-  loginForm.addEventListener("submit", onLoginSubmit);
-} else {
-  greeting.innerText = `Hello ${savedUsername}`;
-  greeting.classList.remove(HIDDEN_CLASSNAME);
-}
+console.log(daysOfWeek);
+
+// ---- Objects
+const player = {
+  name: "effy",
+  age: 27,
+  gender: "female",
+  points: 10,
+  fat: false,
+};
+console.log(player);
+console.log(player.name);
+player.fat = true;
+player.lastName = "Choi";
+console.log(player);
