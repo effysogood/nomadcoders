@@ -50,3 +50,47 @@ const guest = {
 };
 
 guest.sayHello("saeyoung");
+
+const calculator = {
+  plus: function (a, b) {
+    return a + b;
+  },
+  minus: function (a, b) {
+    return a - b;
+  },
+  divide: function (a, b) {
+    return a / b;
+  },
+  times: function (a, b) {
+    return a * b;
+  },
+  power: function (a, b) {
+    return a ** b;
+  },
+};
+calculator.plus(5, 1);
+calculator.power(2, 12);
+calculator.times(3, 4);
+
+// Returns
+const plusResult = calculator.plus;
+const minusResult = calculator.minus;
+const divideResult = calculator.divide;
+const timesResult = calculator.times;
+const powerResult = calculator.power;
+
+const age = parseInt(prompt("How old are you?"));
+
+if (isNaN(age) || age < 0) {
+  console.log("Please write a number");
+} else if (age < 18) {
+  console.log("You are too young.");
+} else if (age >= 18 && age <= 50) {
+  console.log("You can drink");
+} else if (age >= 51 && age <= 80) {
+  console.log("You should drink less.");
+} else if (age === 100) {
+  console.log("Cheers");
+} else if (age > 80) {
+  console.log("You can do whatever you want.");
+}
